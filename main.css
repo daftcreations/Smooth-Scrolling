@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#box1,#box2,#box3,#box4{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-family: arial black;
+    font-size: 60px;
+    line-height: 100vh;
+}
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: deeppink;
+}
+#box3{
+    background-color: silver;
+}
+#box4{
+    background-color: gold;
+}
+#menu{
+    position: fixed;
+    top:50px;
+    width: 100%;
+}
+#leftoptions{
+    height: 30px;
+    width: 40%;
+    background-color: #222;
+    border-radius: 0px 20px 20px 0px;
+    float: left;
+}
+#rightoptions{
+    height: 30px;
+    width: 40%;
+    background-color: #222;
+    border-radius: 20px 0px 0px 20px;
+    float: right;
+}
+a{
+    font-family: arial black;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 120px;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #222;
+    float: left;
+    margin-top: -30px;
+    margin-left: 80px;
+    font-family: arial black;
+    font-size: 20px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

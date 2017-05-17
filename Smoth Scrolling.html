@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script>
+        
+        </script>
+        
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            #box1,#box2,#box3,#box4{
+                height: 100vh;
+                width: 100%;
+                background-color: aqua;
+                text-align: center;
+                font-family: arial black;
+                font-size: 60px;
+                line-height: 100vh;
+            }
+            #box2{
+                background-color: deeppink;
+            }
+            #box3{
+                background-color: silver;
+            }
+            #box4{
+                background-color: gold;
+            }
+            #menu{
+                position: fixed;
+                top:50px;
+                width: 100%;
+            }
+            #leftmenu{
+                height: 30px;
+                width: 40%;
+                background-color: #222;
+                border-radius: 0px 20px 20px 0;
+                float: left;
+            }
+            #rightmenu{
+                height: 30px;
+                width: 40%;
+                background-color: #222;
+                border-radius: 20px 0px 0px 20px;
+                float: right;
+            }
+            #centerlogo{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                background-color: #222;
+                float: left;
+                margin-top: -30px;
+                margin-left: 80px;
+                font-family: arial black;
+                font-size: 20px;
+                color:white;
+                line-height: 100px;
+                text-align: center;
+            }
+            a{
+                font-family: arial black;
+                font-size:20px;
+                color:white;
+                text-decoration: none;
+                margin-left: 120px;
+            }
+        </style>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#link1").click(function(){
+                    $path=$("#box1").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+               $("#link2").click(function(){
+                    $path=$("#box2").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+               $("#link3").click(function(){
+                    $path=$("#box3").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+               $("#link4").click(function(){
+                    $path=$("#box4").offset().top;
+                    $('body').animate({scrollTop:$path},1000);
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="menu">
+            <div id="leftmenu">
+                <a href="#box1" id="link1">BOX 1</a>
+                <a href="#box2" id="link2">BOX 2</a>
+            </div>
+            <div id="centerlogo">
+                DAFT
+            </div>
+            <div id="rightmenu">
+                <a href="#box3" id="link3">BOX 3</a>
+                <a href="#box4" id="link4">BOX 4</a>
+            </div>
+        </div>
+        <div id="box1">
+            BLOCK 1    
+        </div>
+        <div id="box2">
+            BLOCK 2
+        </div>
+        <div id="box3">
+            BLOCK 3
+        </div>
+        <div id="box4">
+            BLOCK 4
+        </div>
+    </body>
+</html>
